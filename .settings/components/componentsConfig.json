@@ -1,0 +1,29 @@
+{
+    "custom": {
+        "path": "custom",
+        "components": []
+    },
+    "aui": {
+        "path": "jqwidgets",
+        "components": ["jqx.divContainer", "jqx.jqxButton", "jqx.jqxButtonGroup",
+                       "jqx.jqxCalendar", "jqx.jqxChart", "jqx.jqxCheckBox",
+                       "jqx.jqxColorPicker", "jqx.jqxComboBox", "jqx.jqxDateTimeInput",
+                       "jqx.jqxDropDownList","jqx.jqxExpander", "jqx.jqxGrid", "jqx.jqxInput", "jqx.jqxListBox",
+                       "jqx.jqxMenu", "jqx.jqxNavigationBar", "jqx.jqxNumberInput",
+                       "jqx.jqxPasswordInput", "jqx.jqxProgressBar", "jqx.jqxRadioButton",
+                       "jqx.jqxSwitchButton", "jqx.jqxTabs", "jqx.jqxToggleButton", "jqx.jqxTree",
+                       "jqx.rootComponent" ]
+    },
+    "uip": {
+        "path": "uip",
+        "components": ["uip.page", "uip.snippet", "feedback.balloon", "svg.line", "svg.path"]
+    },
+    "depui": {
+        "path": "depui",
+        "components": ["depui.scatter"]
+    },
+    "webcomponents": {
+        "path": "webcomponents",
+        "components": []
+    }   
+}

@@ -1,0 +1,39 @@
+{
+    "type": "component",
+    "name": "feedback.balloon",
+    "displayName": "Balloon",
+    "icons": {
+        "16": "",
+        "36": "balloon.png",
+        "68": "balloon.png"
+    },
+    "categories": ["Feedback"],
+    "description": "Defines a balloon.",
+    "paletteVisible": false,
+    "properties": [{
+        "name": "title",
+        "type": "string",
+        "displayName": "Title",
+        "defaultValue": "첫줄은 제목 입니다",
+        "category": "Content attributes",
+        "codeGen": "textNode",
+        "description": "Title of balloon."
+    }, {
+        "name": "content",
+        "type": "string-area",
+        "displayName": "Content",
+        "defaultValue": "내용 영역 입니다",
+        "category": "Content attributes",
+        "description": "Content of balloon."
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false
+    }],
+     "supportStyle": ["position", "left", "top", "width", "height"],
+    "outputElement": "textarea"
+}

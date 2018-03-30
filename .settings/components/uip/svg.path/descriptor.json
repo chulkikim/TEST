@@ -1,0 +1,102 @@
+{
+    "type": "component",
+    "name": "svg.path",
+    "displayName": "Redpen",
+    "icons": {
+        "16": "redpen.png",
+        "36": "redpen.png",
+        "68": "redpen.png"
+    },
+    "categories": ["SVG"],
+    "description": "Defines a redpen.",
+    "paletteVisible": false,
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "100%",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Width of redpen.",
+        "visible": false
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "100%",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Height of redpen.",
+        "visible": false
+    }, {
+        "name": "viewBox",
+        "type": "string",
+        "displayName": "View Box",
+        "defaultValue": "0 0 100% 100%",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "",
+        "visible": false
+    }, {
+        "name": "preserveAspectRatio",
+        "type": "string",
+        "displayName": "Preserve Aspect Ratio",
+        "defaultValue": "none",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "category": "Content attributes",
+        "description": "",
+        "visible": false
+    }, {
+        "name": "d",
+        "type": "string",
+        "displayName": "Path Data",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "description": "",
+        "visible": false
+    }, {
+        "name": "fill",
+        "type": "string",
+        "displayName": "Fill",
+        "defaultValue": "transparent",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "description": "",
+        "visible": false
+    }, {
+        "name": "stroke",
+        "type": "color",
+        "displayName": "Color",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "description": "Color of redpen."
+    }, {
+        "name": "stroke-width",
+        "type": "integer",
+        "displayName": "Stroke Width",
+        "defaultValue": "1",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "description": "Stroke width of redpen."
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false
+    }],
+    "supportStyle": [""],
+    "outputElement": "svg"
+}

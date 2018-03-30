@@ -1,0 +1,35 @@
+{
+    "type": "component",
+    "name": "depui.scatter",
+    "displayName": "ScatterChart",
+    "icons": {
+        "16": "scatter_16.png",
+        "36": "scatter_36.png",
+        "68": "scatter_68.png"
+    },
+    "categories": ["Chart"],
+    "description": "ScatterChart",
+    "properties": [ {
+        "name": "chartWidth",
+        "type": "size",
+        "displayName": "width",
+        "defaultValue": "400px",
+        "codeGen": "DEPUIConstrArg",
+        "category": "Content attributes",
+        "forcedWrite": true,
+        "description": "Sets the width of the chart."
+    }, {
+        "name": "chartHeight",
+        "type": "size",
+        "displayName": "height",
+        "defaultValue": "200px",
+        "codeGen": "DEPUIConstrArg",
+        "category": "Content attributes",
+        "forcedWrite": true,
+        "description": "Sets the height of the chart."
+    }],
+    "supportStyle": ["position", "left", "top", "width", "height", "overflow"],
+    "importJs": ["lib/depui/chart.js", "lib/depui/moment.min.js", "lib/depui/depui-chart.js"],
+    "importCss": ["lib/depui/depui-chart.css"],
+    "outputElement": "div"
+}

@@ -1,0 +1,69 @@
+{
+    "type": "component",
+    "name": "jqx.jqxRadioButton",
+    "parent": "jqx.rootComponent",
+    "displayName": "Radio Button",
+    "icons": {
+        "16": "jqxradiobutton_16.png",
+        "36": "jqxradiobutton_36.png",
+        "68": "jqxradiobutton_68.png"
+    },
+    "categories": ["Content"],
+    "description": "With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option.",
+    "directEditProperty": "text",
+    "properties": [{
+        "name": "text",
+        "type": "string",
+        "displayName": "Text",
+        "defaultValue": "Radio Button",
+        "category": "Content attributes",
+        "codeGen": "textNode",
+        "description": "Text of radio button.",
+        "runnerType": "html"
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the radio button is disabled."
+    }, {
+        "name": "checked",
+        "type": "boolean",
+        "displayName": "Checked",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the radio button is checked."
+    }, {
+        "name": "groupName",
+        "type": "string",
+        "displayName": "Group Name",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the group name. When this property is set, checking a radio button from the group, will uncheck only the radio buttons from the same group."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": [],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

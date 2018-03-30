@@ -1,0 +1,102 @@
+{
+    "type": "component",
+    "name": "jqx.jqxDropDownList",
+    "parent": "jqx.rootComponent",
+    "displayName": "Drop Down List",
+    "icons": {
+        "16": "jqxdropdownlist_16.png",
+        "36": "jqxdropdownlist_36.png",
+        "68": "jqxdropdownlist_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "200px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the drop down list\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "25px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the drop down list\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables/disables the drop down list."
+    }, {
+        "name": "checkboxes",
+        "type": "boolean",
+        "displayName": "Checkboxes",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether checkboxes will be displayed next to the list items."
+    }, {
+        "name": "placeHolder",
+        "type": "string",
+        "displayName": "Place Holder",
+        "defaultValue": "Please Choose:",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Text displayed when the selection is empty."
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":[\"Item One\",\"Item Two\",\"Item Three\",\"Item Four\"],\"raw\":\"Item One\\nItem Two\\nItem Three\\nItem Four\"}",
+        "category": "Content attributes",
+        "description": "Data binding of drop down list.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height", "text-decoration", "text-align", "color"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

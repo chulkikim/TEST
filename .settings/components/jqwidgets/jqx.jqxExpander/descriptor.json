@@ -1,0 +1,95 @@
+{
+    "type": "component",
+    "name": "jqx.jqxExpander",
+    "parent": "jqx.rootComponent",
+    "displayName": "Expander",
+    "icons": {
+        "16": "jqxexpander_16.png",
+        "36": "jqxexpander_36.png",
+        "68": "jqxexpander_68.png"
+    },
+    "categories": ["Container"],
+    "description": "The jqxExpander represents a jQuery widget that has header and content sections",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "200px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets expander\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "100px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets expander\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the expander is disabled."
+    }, {
+        "name": "expanded",
+        "type": "boolean",
+        "displayName": "Expanded",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets expander\"s state (collapsed or expanded)."
+    }, {
+        "name": "headerText",
+        "type": "string",
+        "displayName": "Header Text",
+        "defaultValue": "Header",
+        "category": "Content attributes",
+        "description": "Header text of expander."
+    }, {
+        "name": "contentText",
+        "type": "string",
+        "displayName": "Content Text",
+        "defaultValue": "Content",
+        "category": "Content attributes",
+        "description": "Content text of expander."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height"],
+    "hiddenStyles": [{
+        "name": "display",
+        "defaultValue": "block"
+    }],
+    "importJs": [],
+    "importCss": [],
+    "haveChild": true,
+    "outputElement": "div"
+
+}

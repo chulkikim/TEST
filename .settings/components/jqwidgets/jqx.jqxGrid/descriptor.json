@@ -1,0 +1,717 @@
+{
+    "type": "component",
+    "name": "jqx.jqxGrid",
+    "parent": "jqx.rootComponent",
+    "displayName": "Grid",
+    "icons": {
+        "16": "jqxgrid_16.png",
+        "36": "jqxgrid_36.png",
+        "68": "jqxgrid_68.png"
+    },
+    "categories": ["Table"],
+    "description": "The jqxGrid is a powerful jQuery widget that displays tabular data.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "75%",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the grid\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the grid\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables the Grid\"s plugin."
+    }, {
+        "name": "altrows",
+        "type": "boolean",
+        "displayName": "Alternating Rows",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the alternating rows."
+    }, {
+        "name": "rowsheight",
+        "type": "integer",
+        "displayName": "Rows Height",
+        "defaultValue": 25,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height of the grid rows."
+    }, {
+        "name": "columnsheight",
+        "type": "integer",
+        "displayName": "Columns Height",
+        "defaultValue": 25,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the columns height."
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"header\":[{\"name\":\"Person\",\"type\":\"string\"},{\"name\":\"Height\",\"type\":\"number\"},{\"name\":\"Age\",\"type\":\"number\"},{\"name\":\"IQ\",\"type\":\"number\"},{\"name\":\"\",\"type\":\"boolean\"}],\"cellsaligns\":[\"left\",\"center\",\"right\",\"left\"],\"cellsratios\":[\"30\", \"60\", \"10\", \"0\"],\"data\":[[\"John Snow\",178,19,123,false],[\"Peter Petrelly\",175,26,105,true],[\"James Dean\",190,32,135,true],[\"Matthew Rogan\",183,19,150,true]],\"raw\":\"Person, Height, Age, IQ, \\nJohn Snow, 178, 19, 123, [x]\\nPeter Petrelly, 175, 26, 105, [o]\\nJames Dean, 190, 32, 135, [o]\\nMatthew Rogan, 183, 19, 150, [o]\\n{30L, 40C, 10R, 10L}\"}",
+        "category": "Content attributes",
+        "description": "Data binding of grid.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "columns",
+        "type": "object",
+        "displayName": "Columns",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "rtl",
+        "type": "boolean",
+        "displayName": "Right to Left Text Align",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets a value indicating whether widget's elements are aligned to support locales using right-to-left fonts.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "theme",
+        "type": "string",
+        "displayName": "Theme",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the widget's theme.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "altstart",
+        "type": "integer",
+        "displayName": "Alternating Start",
+        "defaultValue": 1,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "This property specifies the first alternating row.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "altstep",
+        "type": "integer",
+        "displayName": "Alternating Step",
+        "defaultValue": 1,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the alternating step.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showdefaultloadelement",
+        "type": "boolean",
+        "displayName": "Show Default Load Element",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether the Grid should display the built-in loading element or should use a DIV tag with class 'jqx-grid-load'.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autoshowloadelement",
+        "type": "boolean",
+        "displayName": "Auto Show Load Element",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether the loading image should be displayed until the Grid's data is loaded.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autoshowfiltericon",
+        "type": "boolean",
+        "displayName": "Auto Show Filter Icon",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Displays the filter icon only when the column is filtered. When the value of this property is set to false, all grid columns will display a filter icon when the filtering s enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "closeablegroups",
+        "type": "boolean",
+        "displayName": "Closeable Group",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "When the value of this property is true, a close button is displayed in each grouping column",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enableellipsis",
+        "type": "boolean",
+        "displayName": "Enable Ellipsis",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether ellipsis will be displayed, if the cells or columns content overflows.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enablemousewheel",
+        "type": "boolean",
+        "displayName": "Enable Mouse Wheel",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether mousewheel scrolling is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "columnsmenuwidth",
+        "type": "integer",
+        "displayName": "Columns Menu Width",
+        "defaultValue": 15,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the columns menu width.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autoshowcolumnsmenubutton",
+        "type": "boolean",
+        "displayName": "Auto Show Columns Menu Button",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the columns menu button will be displayed only when the mouse cursor is over a columns header or will be always displayed.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enableanimations",
+        "type": "boolean",
+        "displayName": "Enable Animation",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the grid animations.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enabletooltips",
+        "type": "boolean",
+        "displayName": "Enable Tooltips",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the grid tooltips.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enablehover",
+        "type": "boolean",
+        "displayName": "Enable Hover",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the grid rows hover state.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enablebrowserselection",
+        "type": "boolean",
+        "displayName": "Enable Browser Selection",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables the text selection of the browser.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "groupsexpandedbydefault",
+        "type": "boolean",
+        "displayName": "Groups Expanded By Default",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the default state of the grouped rows.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showfiltercolumnbackground",
+        "type": "boolean",
+        "displayName": "Show Filter Column Background",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "When this property is true, the Grid adds an additional visual style to the grid cells in the filter column(s).",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showfiltermenuitems",
+        "type": "boolean",
+        "displayName": "Show Filter Menu Items",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether to display the filtering items in the column's menu.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showpinnedcolumnbackground",
+        "type": "boolean",
+        "displayName": "Show Pinned Column Background",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "When this property is true, the Grid adds an additional visual style to the grid cells in the pinned column(s).",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showsortcolumnbackground",
+        "type": "boolean",
+        "displayName": "Show Sort Column Background",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "When this property is true, the Grid adds an additional visual style to the grid cells in the sort column.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showsortmenuitems",
+        "type": "boolean",
+        "displayName": "Show Sort Menu Items",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether to display the sort menu items.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showgroupmenuitems",
+        "type": "boolean",
+        "displayName": "Show Group Menu Items",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether to display the group menu items.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showrowdetailscolumn",
+        "type": "boolean",
+        "displayName": "Show Row Details Column",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows an additional column with expand/collapse toggle buttons when the Row details feature is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showheader",
+        "type": "boolean",
+        "displayName": "Show Header",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the columns header.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showgroupsheader",
+        "type": "boolean",
+        "displayName": "Show Groups Header",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the groups header area.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showaggregates",
+        "type": "boolean",
+        "displayName": "Show Aggregates",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the aggregates in the grid's statusbar.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showfilterrow",
+        "type": "boolean",
+        "displayName": "Show Filter Row",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the filter row.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showemptyrow",
+        "type": "boolean",
+        "displayName": "Show Empty Row",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the empty row label when the Grid has no records to display.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showstatusbar",
+        "type": "boolean",
+        "displayName": "Show Status Bar",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the grid's statusbar.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "statusbarheight",
+        "type": "integer",
+        "displayName": "Status Bar Height",
+        "defaultValue": 34,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the statusbar's height.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showtoolbar",
+        "type": "boolean",
+        "displayName": "Show Tool Bar",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Shows or hides the grid's toolbar.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "toolbarheight",
+        "type": "integer",
+        "displayName": "Toolbar Height",
+        "defaultValue": 34,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the toolbar's height.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "pagerheight",
+        "type": "integer",
+        "displayName": "Pager Height",
+        "defaultValue": 28,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the height of the Grid Pager.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "groupsheaderheight",
+        "type": "integer",
+        "displayName": "Groups Header Height",
+        "defaultValue": 34,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the height of the Grid Groups Header.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "groupindentwidth",
+        "type": "integer",
+        "displayName": "Group Indent Width",
+        "defaultValue": 20,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the group indent size. This size is used when the grid is grouped. This is the size of the columns with expand/collapse toggle buttons.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autoheight",
+        "type": "boolean",
+        "displayName": "Auto Height",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the height of the grid to be equal to the summary height of the grid rows. This option should be set when the Grid is in paging mode.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autorowheight",
+        "type": "boolean",
+        "displayName": "Auto Row Height",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "This property works along with the \"autoheight\" property. When it is set to true, the height of the Grid rows is dynamically changed depending on the cell values.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "scrollbarsize",
+        "type": "integer",
+        "displayName": "Scroll Bar Size",
+        "defaultValue": 15,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the scrollbars size.",
+        "mode": "general",
+        "runnerType": "html"
+    },  {
+        "name": "verticalscrollbarstep",
+        "type": "integer",
+        "displayName": "Vertical Scrollbar Step",
+        "defaultValue": 5,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the scrollbar's step when the user clicks the scroll arrows.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "verticalscrollbarlargestep",
+        "type": "integer",
+        "displayName": "Vertical Scrollbar Large Step",
+        "defaultValue": 400,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the scrollbar's large step. This property specifies the step with which the vertical scrollbar's value is changed when the user clicks the area above or below the thumb.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "horizontalscrollbarstep",
+        "type": "integer",
+        "displayName": "Horizontal Scrollbar Step",
+        "defaultValue": 5,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "horizontalscrollbarlargestep",
+        "type": "integer",
+        "displayName": "Horizontal Scrollbar Large Step",
+        "defaultValue": 50,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the scrollbar's large step. This property specifies the step with which the horizontal scrollbar's value is changed when the user clicks the area above or below the thumb.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "keyboardnavigation",
+        "type": "boolean",
+        "displayName": "Keyboard Navigation",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the keyboard navigation.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autosavestate",
+        "type": "boolean",
+        "displayName": "Auto Save State",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether the Grid automatically saves its current state.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autoloadstate",
+        "type": "boolean",
+        "displayName": "Auto Load State",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether the Grid automatically loads its current state(if there's already saved one). The Grid's state is loaded when the page is refreshed.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "pagesize",
+        "type": "integer",
+        "displayName": "Page Size",
+        "defaultValue": 10,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the number of visible rows per page when the Grid paging is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "pagerbuttonscount",
+        "type": "integer",
+        "displayName": "Pager Buttons Count",
+        "defaultValue": 5,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": " Sets or gets the buttons displayed in the pager when the \"pagermode\" is set to \"simple\".",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "rowdetails",
+        "type": "boolean",
+        "displayName": "Row Details",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the row details. When this option is enabled, the Grid can show additional information below each grid row.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "pageable",
+        "type": "boolean",
+        "displayName": "Pageable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the Grid Paging feature. When the value of this property is true, the Grid displays a pager below the rows.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "filterable",
+        "type": "boolean",
+        "displayName": "Filterable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the Grid Filtering feature. When the value of this property is true, the Grid displays a filtering panel in the columns popup menus.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "editable",
+        "type": "boolean",
+        "displayName": "Editable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "The editable property enables or disables the Grid editing feature.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "sortable",
+        "type": "boolean",
+        "displayName": "Sortable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "The sortable property enables or disables the sorting feature.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "groupable",
+        "type": "boolean",
+        "displayName": "Groupable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "This property enables or disables the grouping feature.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "selectedrowindex",
+        "type": "integer",
+        "displayName": "Selected Row Index",
+        "defaultValue": -1,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Selects a row at a specified index.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "updatedelay",
+        "type": "integer",
+        "displayName": "Update Delay",
+        "defaultValue": 0,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the rendering update delay. This could be used for deferred scrolling scenarios.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "virtualmode",
+        "type": "boolean",
+        "displayName": "Virtual Mode",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": " Enables or disables the virtual data mode.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "columnsmenu",
+        "type": "boolean",
+        "displayName": "Columns Menu",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the columns dropdown menu.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "columnsresize",
+        "type": "boolean",
+        "displayName": "Columns Resize",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the columns resizing.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "columnsreorder",
+        "type": "integer",
+        "displayName": "Columns Reorder",
+        "defaultValue": 2,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the columns reordering.",
+        "mode": "general",
+        "runnerType": "html"
+    }],
+    "events": [{
+        "name": "rowclick",
+        "displayName": "Row Click",
+        "description": "This event is triggered when a row is clicked."
+    }],
+    "unsupportStyle": ["width", "height", "font-weight", "text-decoration", "text-align"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

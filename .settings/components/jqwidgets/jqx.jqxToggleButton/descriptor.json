@@ -1,0 +1,77 @@
+{
+    "type": "component",
+    "name": "jqx.jqxToggleButton",
+    "parent": "jqx.rootComponent",
+    "displayName": "Toggle Button",
+    "icons": {
+        "16": "jqxtogglebutton_16.png",
+        "36": "jqxtogglebutton_36.png",
+        "68": "jqxtogglebutton_68.png"
+    },
+    "categories": ["Buttons"],
+    "description": "The jqxToggleButton represents a button widget that switches its checked state after a click.",
+    "directEditProperty": "value",
+    "properties": [{
+        "name": "value",
+        "type": "string",
+        "displayName": "Value",
+        "defaultValue": "Toggle Button",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Value of button.",
+        "runnerType": "html"
+    }, {
+        "name": "type",
+        "type": "string",
+        "displayName": "Type",
+        "defaultValue": "button",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "button type",
+        "visible": false
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables the button."
+    }, {
+        "name": "toggled",
+        "type": "boolean",
+        "displayName": "Toggled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the button\"s toggle state."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "events": [{
+        "name": "click",
+        "displayName": "Click",
+        "description": "This event is triggered when the button is clicked."
+    }],
+    "unsupportStyle": [],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "input"
+}

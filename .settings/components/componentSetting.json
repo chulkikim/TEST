@@ -1,0 +1,376 @@
+{
+    "html.button": {
+        "properties": [{
+            "name": "disabled",
+            "value": false
+        }],
+        "styles": [{
+            "name": "left",
+            "value": "50px"
+        }],
+        "usable": true
+    },
+    "jqx.jqxButton": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxDropDownButton": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxSwitchButton": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxToggleButton": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.checkbox": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.img": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.label": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.radiobutton": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.select": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.textarea": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxCalendar": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxChart": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },"aui.jqxChart": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxCheckBox": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxColorPicker": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxComboBox": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxDropDownList": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxProgressBar": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxRadioButton": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxScrollBar-Horizon": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxScrollBar-Vertical": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.div": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.h": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.input": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.dateinput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.monthinput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.weekinput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.timeinput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.numberinput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.rangeinput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxInput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxDateTimeInput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxNumberInput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxPasswordInput": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "html.list": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxListBox": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "svg.line": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxExpander": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxNavigationBar": {
+        "properties": [{
+            "name": "dataBinding",
+            "value": "{\"data\":{\"labels\":[\"Item 1\",\"Item 4\",\"Item,3\"],\"selectedItemLabel\":[\"Item 4\"]},\"raw\":\"Item 1,@Item 4,Item\\\\,3\"}"
+        }],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxSplitter": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxTabs": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "aui.jqxTabs": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxWindow": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxGrid": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "aui.jqxGrid": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxMenu": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxTree": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxTreeMap": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "html.hr": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "html.table": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "svg.path": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "feedback.balloon": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.divContainer": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxButtonGroup": {
+        "properties": [],
+        "styles": [],
+        "usable": true
+    },
+    "jqx.jqxDataTable": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxLinkButton": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxListMenu": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxMaskedInput": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxPanel": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxRangeSelector": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxRepeatButton": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxGauge": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxScrollBar": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxTreeGrid": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxRating": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "jqx.jqxSlider": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "uip.page": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "uip.snippet": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "component.root": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "html": {
+        "properties": [],
+        "styles": [],
+        "usable": false
+    },
+    "depui.scatter": {
+        "properties": [],
+        "styles": [{
+            "name": "width",
+            "value": "840px"
+        }, {
+            "name": "height",
+            "value": "420px"
+        }],
+        "usable": true
+    }
+}

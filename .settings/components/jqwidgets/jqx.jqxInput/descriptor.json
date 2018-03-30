@@ -1,0 +1,76 @@
+{
+    "type": "component",
+    "name": "jqx.jqxInput",
+    "parent": "jqx.rootComponent",
+    "displayName": "Input",
+    "icons": {
+        "16": "jqxinput_16.png",
+        "36": "jqxinput_36.png",
+        "68": "jqxinput_68.png"
+    },
+    "categories": ["Inputs"],
+    "description": "The jqxInput represents an input widget with auto-complete capabilities.",
+    "properties": [{
+        "name": "value",
+        "type": "string",
+        "displayName": "Value",
+        "defaultValue": "Input",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Value of input.",
+        "runnerType": "html"
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the jqxInput."
+    }, {
+        "name": "placeHolder",
+        "type": "string",
+        "displayName": "Place Holder",
+        "defaultValue": "Input text.",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the input\"s place holder."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "tooltip-content",
+        "type": "string",
+        "displayName": "Content",
+        "defaultValue": "This is an input.",
+        "category": "Tooltip attributes",
+        "description": "Sets the content of tooltip."
+    }, {
+        "name": "tooltip-position",
+        "type": "string",
+        "displayName": "Position",
+        "defaultValue": "top",
+        "category": "Tooltip attributes",
+        "description": "Sets the position of tooltip.",
+        "visible": false
+    }],
+    "unsupportStyle": [],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "input"
+}

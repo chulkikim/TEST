@@ -1,0 +1,106 @@
+{
+    "type": "component",
+    "name": "jqx.jqxMenu",
+    "parent": "jqx.rootComponent",
+    "displayName": "Menu",
+    "icons": {
+        "16": "jqxmenu_16.png",
+        "36": "jqxmenu_36.png",
+        "68": "jqxmenu_68.png"
+    },
+    "categories": ["Menu"],
+    "description": "The jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the menu\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "120px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the menu\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the menu."
+    }, {
+        "name": "mode",
+        "type": "jqx.jqxMenu@mode",
+        "displayName": "Mode",
+        "defaultValue": "vertical",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the menu\"s display mode."
+    }, {
+        "name": "autoOpenPopup",
+        "type": "boolean",
+        "displayName": "AutoOpenPopup",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Opens the Context Menu when the right-mouse button is pressed."
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":[{\"label\":\"Menu1\",\"items\":[{\"label\":\"SubMenu1\",\"items\":[{\"label\":\"SubMenu11\"},{\"label\":\"SubMenu12\"}]}]},{\"label\":\"Menu2\"},{\"label\":\"Menu3\"},{\"label\":\"Menu4\"}],\"raw\":\"Menu1\\n SubMenu1\\n  SubMenu11\\n  SubMenu12\\nMenu2\\nMenu3\\nMenu4\"}",
+        "category": "Content attributes",
+        "description": "Data binding of menu.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "defaultStyles": [{
+        "name": "overflow",
+        "defaultValue": "auto"
+    }],
+    "unsupportStyle": ["width", "height", "background-image", "background-repeat", "background-color"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

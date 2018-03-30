@@ -1,0 +1,318 @@
+{
+    "type": "component",
+    "name": "jqx.jqxChart",
+    "parent": "jqx.rootComponent",
+    "displayName": "Chart",
+    "icons": {
+        "16": "jqxchart_16.png",
+        "36": "jqxchart_36.png",
+        "68": "jqxchart_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxChart is an easy to use jQuery Chart widget.",
+    "properties": [{
+        "name": "title",
+        "type": "string",
+        "displayName": "Title",
+        "defaultValue": "Title",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the title of the chart."
+    }, {
+        "name": "type",
+        "type": "jqx.jqxChart@type",
+        "displayName": "Type",
+        "defaultValue": "column-vertical",
+        "category": "Content attributes",
+        "description": "Sets the type of the chart."
+    }, {
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "300px",
+        "category": "Content attributes",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "300px",
+        "category": "Content attributes",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "seriesGroups",
+        "type": "object",
+        "displayName": "Series Groups",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "description",
+        "type": "string",
+        "displayName": "Description",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the description text of the chart.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showBorderLine",
+        "type": "boolean",
+        "displayName": "Show BorderLine",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Determines whether to display the chart's border line.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "borderLineColor",
+        "type": "color",
+        "displayName": "Border Line Color",
+        "defaultValue": "#888888",
+        "category": "Content attributes",
+        "description": "Sets the chart's border color.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "borderLineWidth",
+        "type": "integer",
+        "displayName": "Border Line Width",
+        "defaultValue": 1,
+        "category": "Content attributes",
+        "description": "Sets the chart's border line width.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "backgroundColor",
+        "type": "color",
+        "displayName": "Background Color",
+        "defaultValue": "white",
+        "category": "Content attributes",
+        "description": "Sets the chart's background color.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "backgroundImage",
+        "type": "image",
+        "displayName": "Background Image",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "description": "Sets the chart's background image.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showLegend",
+        "type": "boolean",
+        "displayName": "Background Image",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Determines whether to show or hide the chart series legend.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "legendLayout",
+        "type": "string",
+        "displayName": "Legend Layout",
+        "defaultValue": "none",
+        "category": "Content attributes",
+        "description": "Sets the legend's layout.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "padding",
+        "type": "string",
+        "displayName": "Padding",
+        "defaultValue": "{ left: 5, top: 5, right: 5, bottom: 5 }",
+        "category": "Content attributes",
+        "description": "Sets the left,top, right & bottom padding of the Chart.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "titlePadding",
+        "type": "string",
+        "displayName": "Title Padding",
+        "defaultValue": "{ left: 2, top: 2, right: 2, bottom: 2 }",
+        "category": "Content attributes",
+        "description": "Sets the padding of the chart 's title.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "colorScheme",
+        "type": "string",
+        "displayName": "Color Scheme",
+        "defaultValue": "scheme01",
+        "category": "Content attributes",
+        "description": "Sets the chart's color pallete.(scheme01~scheme11)",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "greyScale",
+        "type": "boolean",
+        "displayName": "Grey Scale",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Determines whether to display the chart using grey scale colors.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showToolTips",
+        "type": "boolean",
+        "displayName": "Show ToolTips",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Enables or disables the chart tooltips.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "toolTipShowDelay",
+        "type": "integer",
+        "displayName": "ToolTip Show Delay",
+        "defaultValue": 500,
+        "category": "Content attributes",
+        "description": "Determines the tooltips show delay in milliseconds.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "toolTipHideDelay",
+        "type": "integer",
+        "displayName": "ToolTip Hide Delay",
+        "defaultValue": 4000,
+        "category": "Content attributes",
+        "description": "Determines the tooltips hide delay in milliseconds.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "rtl",
+        "type": "boolean",
+        "displayName": "rtl",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Sets or gets a value indicating whether the Chart's layout is mirrored.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enableCrosshairs",
+        "type": "boolean",
+        "displayName": "Enable Crosshairs",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Enables or disables the crosshairs lines.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "crosshairsColor",
+        "type": "color",
+        "displayName": "Crosshairs Color",
+        "defaultValue": "#888888",
+        "category": "Content attributes",
+        "description": "Gets or sets the color of the crosshairs lines.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "crosshairsDashStyle",
+        "type": "color",
+        "displayName": "Crosshairs Dash Style",
+        "defaultValue": "2,2",
+        "category": "Content attributes",
+        "description": "Gets or sets the dash style of the crosshairs lines.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "crosshairsLineWidth",
+        "type": "string",
+        "displayName": "Crosshairs Line Width",
+        "defaultValue": "1.0",
+        "category": "Content attributes",
+        "description": "Gets or sets the width of the crosshairs lines.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enabled",
+        "type": "boolean",
+        "displayName": "Crosshairs Line Width",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Gets or sets whether the chart widget in enabled or disabled state.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enableanimations",
+        "type": "boolean",
+        "displayName": "Enable Animation",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Enables or disables the grid animations.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enableAxisTextAnimation",
+        "type": "boolean",
+        "displayName": "Enable Axis Text Animation",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Determines if the animation of the axes text is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "animationDuration",
+        "type": "integer",
+        "displayName": "Animation Duration",
+        "defaultValue": 1000,
+        "category": "Content attributes",
+        "description": "Determines the animations duration in milliseconds.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "renderEngine",
+        "type": "string",
+        "displayName": "Render Engine",
+        "defaultValue": "none",
+        "category": "Content attributes",
+        "description": "Determines the rendering engine used to display the chart.(SVG, VML HTML5)",
+        "mode": "general",
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

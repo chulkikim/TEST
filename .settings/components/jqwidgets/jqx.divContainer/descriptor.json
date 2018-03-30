@@ -1,0 +1,31 @@
+{
+    "type": "component",
+    "name": "jqx.divContainer",
+    "displayName": "Div Container",
+    "categories": ["Container"],
+    "description": "Defines a div container.",
+    "paletteVisible": false,
+    "properties": [{
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+        }, {
+        "name": "uip-hidden",
+        "type": "boolean",
+        "displayName": "Hidden",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is hidden.",
+        "visible": false,
+        "runnerType": "html"
+     }],
+     "events": [],
+     "supportStyle": [""],
+     "haveChild": true,
+     "outputElement": "div"
+}

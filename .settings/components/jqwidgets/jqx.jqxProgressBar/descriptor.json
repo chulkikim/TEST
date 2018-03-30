@@ -1,0 +1,106 @@
+{
+    "type": "component",
+    "name": "jqx.jqxProgressBar",
+    "parent": "jqx.rootComponent",
+    "displayName": "Progress Bar",
+    "icons": {
+        "16": "jqxprogressbar_16.png",
+        "36": "jqxprogressbar_36.png",
+        "68": "jqxprogressbar_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation.",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "250px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "25px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines whether the progress bar is disabled."
+    }, {
+        "name": "value",
+        "type": "integer",
+        "displayName": "Value",
+        "defaultValue": "50",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the progress bar\"s value.",
+        "conditions": [{
+            "name": "max",
+            "values": [100]
+        }, {
+            "name": "min",
+            "values": [0]
+        }]
+    }, {
+        "name": "orientation",
+        "type": "jqx@orientation",
+        "displayName": "Orientation",
+        "defaultValue": "horizontal",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the orientation."
+    }, {
+        "name": "showText",
+        "type": "boolean",
+        "displayName": "Show Text",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the visibility of the progress bar\"s percentage\"s text."
+    }, {
+        "name": "layout",
+        "type": "jqxProgressBar@layout",
+        "displayName": "Layout",
+        "defaultValue": "normal",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the progress bar's layout."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height", "font-size", "text-decoration", "text-align"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

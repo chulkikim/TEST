@@ -1,0 +1,94 @@
+{
+    "type": "component",
+    "name": "jqx.jqxListBox",
+    "parent": "jqx.rootComponent",
+    "displayName": "List Box",
+    "icons": {
+        "16": "jqxlistbox_16.png",
+        "36": "jqxlistbox_36.png",
+        "68": "jqxlistbox_68.png"
+    },
+    "categories": ["List"],
+    "description": "The jqxListBox represents a jQuery listbox widget that contains a list of selectable items.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the list box\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the list box\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables/disables the list box."
+    }, {
+        "name": "checkboxes",
+        "type": "boolean",
+        "displayName": "Checkboxes",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the list box should display a checkbox next to each item."
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":[\"Item One\",\"Item Two\",\"Item Three\",\"Item Four\"],\"raw\":\"Item One\\nItem Two\\nItem Three\\nItem Four\"}",
+        "category": "Content attributes",
+        "description": "Data binding of list box.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height", "text-decoration", "text-align"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

@@ -1,0 +1,97 @@
+{
+    "type": "component",
+    "name": "jqx.jqxDateTimeInput",
+    "displayName": "Date Time Input",
+    "parent": "jqx.rootComponent",
+    "icons": {
+        "16": "jqxdatetimeinput_16.png",
+        "36": "jqxdatetimeinput_36.png",
+        "68": "jqxdatetimeinput_68.png"
+    },
+    "categories": ["Inputs"],
+    "description": "The jqxDateTimeInput represents a jQuery datetimeinput widget that enables the user to select a date or time using a popup calendar display or by keyboard input into the text field.",
+    "properties": [{
+        "name": "value",
+        "type": "date",
+        "displayName": "Value",
+        "defaultValue": "2014-01-01",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the date time input value.",
+        "runnerType": "Date"
+    }, {
+        "name": "formatString",
+        "type": "string",
+        "displayName": "Format String",
+        "defaultValue": "dd/MM/yyyy",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the date time input format of the date."
+    }, {
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "250px",
+        "category": "Content attributes",
+        "description": "Sets the width of the date time input.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "25px",
+        "category": "Content attributes",
+        "description": "Sets the height of the date time input.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "parent": "jqx.rootComponent",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "description": "Determines whether the widget is disabled."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "tooltip-content",
+        "type": "string",
+        "displayName": "Content",
+        "defaultValue": "This is a date time input.",
+        "category": "Tooltip attributes",
+        "description": "Sets the content of tooltip."
+    }, {
+        "name": "tooltip-position",
+        "type": "string",
+        "displayName": "Position",
+        "defaultValue": "top",
+        "category": "Tooltip attributes",
+        "description": "Sets the position of tooltip.",
+        "visible": false
+    }],
+    "unsupportStyle": ["width", "height"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

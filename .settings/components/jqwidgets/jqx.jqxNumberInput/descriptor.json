@@ -1,0 +1,148 @@
+{
+    "type": "component",
+    "name": "jqx.jqxNumberInput",
+    "parent": "jqx.rootComponent",
+    "displayName": "Number Input",
+    "icons": {
+        "16": "jqxnumberinput_16.png",
+        "36": "jqxnumberinput_36.png",
+        "68": "jqxnumberinput_68.png"
+    },
+    "categories": ["Inputs"],
+    "description": "The jqxNumberInput represents a jQuery widget that allows you to input currency, percentages and any type of numeric data.",
+    "properties": [{
+        "name": "decimal",
+        "type": "integer",
+        "displayName": "Decimal",
+        "defaultValue": 0,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the input\"s number."
+    }, {
+        "name": "inputMode",
+        "type": "jqx.jqxNumberInput@inputMode",
+        "displayName": "Input Mode",
+        "defaultValue": "advanced",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the input\"s mode."
+    }, {
+        "name": "spinButtons",
+        "type": "boolean",
+        "displayName": "Spin Buttons",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Shows hides the spin buttons.",
+        "visible": false
+    }, {
+        "name": "decimalDigits",
+        "type": "integer",
+        "displayName": "Decimal Digits",
+        "defaultValue": 2,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Indicates the number of decimal places to use in numeric values.",
+        "conditions": [{
+            "name": "min",
+            "values": [0]
+        }, {
+            "name": "max",
+            "values": [999999]
+        }]
+    }, {
+        "name": "groupSeparator",
+        "type": "string",
+        "displayName": "Group Separator",
+        "defaultValue": ",",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the string that separates groups of digits to the left of the decimal in numeric values."
+    }, {
+        "name": "digits",
+        "type": "integer",
+        "displayName": "Digits",
+        "defaultValue": 8,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the digits in the input.",
+        "conditions": [{
+            "name": "min",
+            "values": [0]
+        }, {
+            "name": "max",
+            "values": [999999]
+        }]
+    }, {
+        "name": "negativeSymbol",
+        "type": "string",
+        "displayName": "Negative Symbol",
+        "defaultValue": "-",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the string to use as negative symbol.",
+        "conditions": [{
+            "name": "max-length",
+            "values": ["1"]
+        }]
+    }, {
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "250px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "25px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "tooltip-content",
+        "type": "string",
+        "displayName": "Content",
+        "defaultValue": "This is a number input.",
+        "category": "Tooltip attributes",
+        "description": "Sets the content of tooltip."
+    }, {
+        "name": "tooltip-position",
+        "type": "string",
+        "displayName": "Position",
+        "defaultValue": "top",
+        "category": "Tooltip attributes",
+        "description": "Sets the position of tooltip.",
+        "visible": false
+    }],
+    "unsupportStyle": ["width", "height"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

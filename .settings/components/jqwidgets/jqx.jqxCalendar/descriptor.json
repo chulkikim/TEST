@@ -1,0 +1,67 @@
+{
+    "type": "component",
+    "name": "jqx.jqxCalendar",
+    "parent": "jqx.rootComponent",
+    "displayName": "Calendar",
+    "icons": {
+        "16": "jqxcalendar_16.png",
+        "36": "jqxcalendar_36.png",
+        "68": "jqxcalendar_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxCalendar represents a jQuery calendar widget that enables the user to select a date using a visual monthly calendar display.",
+    "properties": [{
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Disables (true) or enables (false) the calendar."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "152px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "160px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }],
+    "unsupportStyle": ["width", "height", "font-family", "font-size", "font-weight", "font-style", "text-decoration", "text-align", "color", "text-decoration", "background-image", "background-repeat", "background-color"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

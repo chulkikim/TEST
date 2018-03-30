@@ -1,0 +1,121 @@
+{
+    "type": "component",
+    "name": "jqx.jqxComboBox",
+    "parent": "jqx.rootComponent",
+    "displayName": "Combo Box",
+    "icons": {
+        "16": "jqxcombobox_16.png",
+        "36": "jqxcombobox_36.png",
+        "68": "jqxcombobox_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxComboBox represents a jQuery combobox widget that contains an input field with auto-complete functionality and a list of selectable items displayed in a drop-down.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "200px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the combo box\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "25px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the combo box\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "selectedIndex",
+        "type": "integer",
+        "displayName": "Selected Index",
+        "defaultValue": 0,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": ".",
+        "visible": false
+    }, {
+        "name": "displayMember",
+        "type": "string",
+        "displayName": "Display Member",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": ".",
+        "visible": false
+    }, {
+        "name": "valueMember",
+        "type": "string",
+        "displayName": "Value Member",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": ".",
+        "visible": false
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables/disables the combo box."
+    }, {
+        "name": "placeHolder",
+        "type": "string",
+        "displayName": "Place Holder",
+        "defaultValue": "Please choose:",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the input field\"s place holder."
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":[{\"name\":\"Group 1\",\"disabled\":false,\"selected\":false,\"group\":true},{\"name\":\"Member 1\",\"disabled\":true,\"selected\":false,\"group\":false},{\"name\":\"Member 2\",\"disabled\":true,\"selected\":false,\"group\":false},{\"name\":\"Member 3\",\"disabled\":false,\"selected\":true,\"group\":false},{\"name\":\"Member 4\",\"disabled\":true,\"selected\":false,\"group\":false},{\"name\":\"Group 2\",\"disabled\":false,\"selected\":false,\"group\":true},{\"name\":\"Member 1\",\"disabled\":false,\"selected\":false,\"group\":false},{\"name\":\"Member 2\",\"disabled\":true,\"selected\":false,\"group\":false},{\"name\":\"Member 3\",\"disabled\":true,\"selected\":false,\"group\":false}],\"raw\":\"Group 1\\n -Member 1-\\n -Member 2-\\n @Member 3\\n -Member 4-\\nGroup 2\\n Member 1\\n -Member 2-\\n -Member 3-\"}",
+        "category": "Content attributes",
+        "description": "Data binding of combo box.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

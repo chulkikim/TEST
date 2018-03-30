@@ -1,0 +1,100 @@
+{
+    "type": "component",
+    "name": "jqx.jqxSwitchButton",
+    "parent": "jqx.rootComponent",
+    "displayName": "Switch Button",
+    "icons": {
+        "16": "jqxswitchbutton_16.png",
+        "36": "jqxswitchbutton_36.png",
+        "68": "jqxswitchbutton_68.png"
+    },
+    "categories": ["Buttons"],
+    "description": "The jqxSwitchButton represents a button widget that switches its checked state after a click.",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "90px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "30px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the switch button is disabled."
+    }, {
+        "name": "orientation",
+        "type": "jqx@orientation",
+        "displayName": "Orientation",
+        "defaultValue": "horizontal",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Determines the switch button\"s orientation."
+    }, {
+        "name": "onLabel",
+        "type": "string",
+        "displayName": "On Label",
+        "defaultValue": "ON",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "conditions": [{
+            "name": "uppercase",
+            "values": [true]
+        }],
+        "description": "Sets the string displayed when the button is checked."
+    }, {
+        "name": "offLabel",
+        "type": "string",
+        "displayName": "Off Label",
+        "defaultValue": "OFF",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "conditions": [{
+            "name": "uppercase",
+            "values": [true]
+        }],
+        "description": "Sets the string displayed when the button is unchecked."
+    }, {
+        "name": "checked",
+        "type": "boolean",
+        "displayName": "Checked",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the check state."
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height", "font-family", "font-size", "font-weight", "text-decoration", "text-align", "color"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+
+}

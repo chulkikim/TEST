@@ -1,0 +1,148 @@
+{
+    "type": "page",
+    "name": "uip.page",
+    "displayName": "Page",
+    "icons": {
+        "16": "page_16.png",
+        "36": "page_36.png",
+        "68": "page_68.png"
+    },
+    "parent": "none",
+    "paletteVisible": false,
+    "properties": [{
+        "name": "id",
+        "type": "string",
+        "displayName": "Id",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "description": "The id attribute specifies its element's unique identifier."
+    }, {
+        "name": "data-uip-pageid",
+        "type": "string",
+        "displayName": "Page ID",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "Page ID"
+    }, {
+        "name": "data-uip-description",
+        "type": "string-area",
+        "displayName": "Description",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "Description of page."
+    }, {
+        "name": "data-uip-comment",
+        "type": "string-area",
+        "displayName": "Comment",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "Comment of page"
+    }, {
+        "name": "themeFilePath",
+        "type": "theme",
+        "displayName": "Theme",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "description": "Theme of page."
+    }, {
+        "name": "data-uip-systemname",
+        "type": "string",
+        "displayName": "System Name",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "System name."
+    }, {
+        "name": "data-uip-subsystemname",
+        "type": "string",
+        "displayName": "Subsystem Name",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "Subsystem name."
+    }, {
+        "name": "data-uip-pagename",
+        "type": "string",
+        "displayName": "Page Name",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "Page name."
+    }, {
+        "name": "data-uip-author",
+        "type": "string",
+        "displayName": "Author",
+        "defaultValue": "",
+        "category": "Documentation",
+        "description": "Page author."
+    }, {
+        "name": "data-uip-date",
+        "type": "string",
+        "displayName": "Date",
+        "category": "Documentation",
+        "description": "Page creation date."
+    }, {
+        "name": "uip-page-width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "",
+        "category": "Viewport",
+        "description": "Viewport Width"
+    }, {
+        "name": "uip-page-height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "",
+        "category": "Viewport",
+        "description": "Viewport Height"
+    }, {
+        "name": "data-uip-feedback-savetime",
+        "type": "string",
+        "displayName": "SaveTime",
+        "defaultValue": "",
+        "category": "Feedback",
+        "description": "Save Time",
+        "visible": false
+    }, {
+        "name": "data-uip-feedback-pagepath",
+        "type": "string",
+        "displayName": "PagePath",
+        "defaultValue": "",
+        "category": "Feedback",
+        "description": "Page Path",
+        "visible": false
+    }, {
+        "name": "data-uip-feedback-username",
+        "type": "string",
+        "displayName": "UserName",
+        "defaultValue": "",
+        "category": "Feedback",
+        "description": "User Name",
+        "visible": false
+    }, {
+        "name": "data-uip-feedback-state",
+        "type": "string",
+        "displayName": "State",
+        "defaultValue": "",
+        "category": "Feedback",
+        "description": "State",
+        "visible": false
+    } ],
+    "events": [{
+        "name": "click",
+        "displayName": "Click",
+        "description": "Fires on a mouse click on the element."
+    }, {
+        "name": "leftkeydown",
+        "displayName": "Left Key Down",
+        "description": "Fires when a user is pressing a left key."
+    }, {
+        "name": "rightkeydown",
+        "displayName": "Right Key Down",
+        "description": "Fires when a user is pressing a right key."
+    }],
+    "importJs": [
+        "lib/jquery/jquery-1.11.0.min.js"
+    ],
+    "supportStyle": ["background-color"],
+    "defaultStyles": [],
+
+    "outputElement": "div"
+}

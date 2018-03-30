@@ -1,0 +1,75 @@
+{
+    "type": "component",
+    "name": "jqx.jqxColorPicker",
+    "parent": "jqx.rootComponent",
+    "displayName": "Color Picker",
+    "icons": {
+        "16": "jqxcolorpicker_16.png",
+        "36": "jqxcolorpicker_36.png",
+        "68": "jqxcolorpicker_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color.",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "100px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables the color picker."
+    }, {
+        "name": "colorMode",
+        "type": "jqx.jqxColorPicker@colorMode",
+        "displayName": "Color Mode",
+        "defaultValue": "saturation",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the color mode."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height", "background-image", "background-repeat", "background-color"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

@@ -1,0 +1,107 @@
+{
+    "type": "component",
+    "name": "jqx.jqxNavigationBar",
+    "parent": "jqx.rootComponent",
+    "displayName": "Navigation Bar",
+    "icons": {
+        "16": "jqxnavigationbar_16.png",
+        "36": "jqxnavigationbar_36.png",
+        "68": "jqxnavigationbar_68.png"
+    },
+    "categories": ["Container"],
+    "description": "The jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs).",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "200px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the navigation bar\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "200px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the navigation bar\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the navigation bar is disabled."
+    }, {
+        "name": "expandMode",
+        "type": "string",
+        "displayName": "Expand Mode",
+        "defaultValue": "singleFitHeight",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets navigation bar\"s expand mode.",
+        "visible": false
+    }, {
+        "name": "expandedIndexes",
+        "type": "dynamic-enum",
+        "displayName": "Expanded Indexes",
+        "defaultValue": 0,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the expanded item.",
+        "conditions": [{
+            "name": "set-dynamic-enum-type",
+            "values": ["labels",
+                "selectedItemLabel"
+            ]
+        }]
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":{\"labels\":[\"Item 1\",\"Item 2\",\"Item,3\"],\"selectedItemLabel\":[\"Item 2\"]},\"raw\":\"Item 1,@Item 2,Item\\\\,3\"}",
+        "category": "Content attributes",
+        "description": "Data binding of navigation bar.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "uip-skip-child-rendering",
+        "type": "boolean",
+        "displayName": "Skip Child Rendering",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether skip rendering child of the widget",
+        "visible": false
+    }],
+    "unsupportStyle": ["width", "height", "text-decoration", "text-align"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

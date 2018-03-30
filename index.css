@@ -1,0 +1,612 @@
+#div1 {
+  width: 236px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  left: 17px;
+  top: 8px;
+  border-color: #cccccc;
+}
+
+#div2 {
+  width: 236px;
+  height: 569px;
+  border-width: 1px;
+  border-style: dotted;
+  position: absolute;
+  left: 255px;
+  top: 8px;
+}
+
+#div3 {
+  width: 236px;
+  height: 569px;
+  border-width: 1px;
+  border-style: dotted;
+  position: absolute;
+  left: 280px;
+  top: 16px;
+}
+
+#div4 {
+  width: 98.31%;
+  height: 97px;
+  border-width: 0px;
+  border-style: solid;
+  position: absolute;
+  left: 2px;
+  top: 11px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-color: #a4c2f4;
+  background-color: #4a86e8;
+}
+
+#jqxChart1 {
+  position: absolute;
+  left: 2px;
+  top: 110px;
+}
+
+#jqxGrid1 {
+  position: absolute;
+  left: 3px;
+  top: 385px;
+}
+
+#div5 {
+  width: 236px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block
+    left: 257px;
+  top: 18px;
+  border-color: #cccccc;
+  left: 246px;
+}
+
+#div6 {
+  width: 98.31%;
+  height: 97px;
+  border-width: 0px;
+  border-style: solid;
+  position: absolute;
+  left: 2px;
+  top: 11px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-color: #a4c2f4;
+  background-color: #0000ff;
+}
+
+#jqxChart2 {
+  position: absolute;
+  left: 2px;
+  top: 110px;
+}
+
+#jqxGrid2 {
+  position: absolute;
+  left: 3px;
+  top: 385px;
+}
+
+#div7 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div8 {
+  width: 98.31%;
+  height: 97px;
+  border-width: 0px;
+  border-style: solid;
+  position: absolute;
+  left: 2px;
+  top: 11px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-color: #a4c2f4;
+  background-color: #9900ff;
+}
+
+#jqxChart3 {
+  position: absolute;
+  left: 2px;
+  top: 110px;
+}
+
+#jqxGrid3 {
+  position: absolute;
+  left: 3px;
+  top: 385px;
+}
+
+#label1 {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#label2 {
+  display: inline-block;
+  position: absolute;
+  left: 69px;
+  top: 54px;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: bold;
+  width: 164px;
+  height: 43px;
+}
+
+#jqxButton1 {
+  position: absolute;
+  left: 207px;
+  top: 1px;
+  width: 25px;
+  height: 26px;
+  background-repeat: no-repeat;
+}
+
+#div9 {
+  width: 300px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div10 {
+  width: 300px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div11 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #6d9eeb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label3 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label4 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#jqxChart4 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid4 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}
+
+#div12 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div13 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #9900ff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label5 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label6 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#jqxChart5 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid5 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}
+
+#div14 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div15 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #76a5af;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label7 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label8 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#jqxChart6 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid6 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}
+
+#button1 {
+  left: 219px;
+  position: absolute;
+  top: 5px;
+  width: 26px;
+  height: 21px;
+}
+
+#img1 {
+  width: 26px;
+  height: 24px;
+  position: absolute;
+  left: 225px;
+  top: 3px;
+}
+
+#img2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 228px;
+  top: 6px;
+}
+
+#div16 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div17 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #6d9eeb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label9 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label10 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#img3 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 228px;
+  top: 6px;
+}
+
+#jqxChart7 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid7 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}
+
+#div18 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div19 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #6d9eeb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label11 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label12 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#img4 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 228px;
+  top: 6px;
+}
+
+#jqxChart8 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid8 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}
+
+#div20 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div21 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #6d9eeb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label13 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label14 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#img5 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 228px;
+  top: 6px;
+}
+
+#jqxChart9 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid9 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}
+
+#div22 {
+  width: 250px;
+  height: 569px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+  border-color: #cccccc;
+}
+
+#div23 {
+  width: 100.4%;
+  height: 116px;
+  border-width: 0px;
+  border-style: dotted;
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  background-color: #6d9eeb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#label15 {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#label16 {
+  display: inline-block;
+  position: absolute;
+  left: 121px;
+  top: 71px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#img6 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 228px;
+  top: 6px;
+}
+
+#jqxChart10 {
+  position: absolute;
+  left: 0px;
+  top: 117px;
+}
+
+#jqxGrid10 {
+  position: absolute;
+  left: 0px;
+  top: 388px;
+}

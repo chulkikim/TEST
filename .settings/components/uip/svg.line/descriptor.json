@@ -1,0 +1,122 @@
+{
+    "type": "component",
+    "name": "svg.line",
+    "displayName": "Line",
+    "icons": {
+        "16": "line_16.png",
+        "36": "line_36.png",
+        "68": "line_68.png"
+    },
+    "categories": ["Shape"],
+    "description": "Defines a line.",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "200",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Width of line.",
+        "visible": false
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "100",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Height of line.",
+        "visible": false
+    }, {
+        "name": "viewBox",
+        "type": "string",
+        "displayName": "View Box",
+        "defaultValue": "0 0 100 100",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "category": "Content attributes",
+        "description": "",
+        "visible": false
+    }, {
+        "name": "preserveAspectRatio",
+        "type": "string",
+        "displayName": "Preserve Aspect Ratio",
+        "defaultValue": "none",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "category": "Content attributes",
+        "description": "",
+        "visible": false
+    }, {
+        "name": "shape-rendering",
+        "type": "string",
+        "displayName": "Shape Rendering",
+        "defaultValue": "geometricPrecision",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "category": "Content attributes",
+        "description": "",
+        "visible": false
+    }, {
+        "name": "vector-effect",
+        "type": "string",
+        "displayName": "Vector Effect",
+        "defaultValue": "non-scaling-stroke",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "category": "Content attributes",
+        "description": "",
+        "visible": false
+    }, {
+        "name": "stroke",
+        "type": "color",
+        "displayName": "Color",
+        "defaultValue": "black",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "description": "Color of line."
+    }, {
+        "name": "stroke-width",
+        "type": "integer",
+        "displayName": "Width",
+        "defaultValue": "1",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr_0",
+        "forcedWrite": true,
+        "description": "Stroke width of line."
+    }, {
+        "name": "mode",
+        "type": "svg.line@mode",
+        "displayName": "Mode",
+        "defaultValue": "lsl",
+        "category": "Content attributes",
+        "description": "Line mode"
+    }, {
+        "name": "stroke-dasharray",
+        "type": "svg.line@stroke-dasharray",
+        "displayName": "Style",
+        "defaultValue": "solid",
+        "category": "Content attributes",
+        "description": "Line stroke style"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible."
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false
+    }],
+    "supportStyle": [""],
+    "outputElement": "svg"
+}

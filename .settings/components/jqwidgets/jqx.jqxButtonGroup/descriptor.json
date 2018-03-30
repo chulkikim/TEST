@@ -1,0 +1,94 @@
+{
+    "type": "component",
+    "name": "jqx.jqxButtonGroup",
+    "parent": "jqx.rootComponent",
+    "displayName": "Button Group",
+    "icons": {
+        "16": "jqxbuttongroup_16.png",
+        "36": "jqxbuttongroup_36.png",
+        "68": "jqxbuttongroup_68.png"
+    },
+    "categories": ["Buttons"],
+    "description": "The jqxButtonGroup widget creates a set of buttons that can work as normal buttons, radio buttons or checkboxes.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the button group."
+    }, {
+        "name": "mode",
+        "type": "jqx.jqxButtonGroup@mode",
+        "displayName": "Mode",
+        "defaultValue": "default",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the button group\"s mode."
+    }, {
+        "name": "enableHover",
+        "type": "boolean",
+        "displayName": "Enable Hover",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disabled the highlight state.",
+        "visible": false
+    }, {
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "200px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "30px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":[{\"name\":\"Left\",\"selected\":false},{\"name\":\"Center\",\"selected\":true},{\"name\":\"Right\",\"selected\":false}],\"raw\":\"Left\\nCenter\\nRight\"}",
+        "category": "Content attributes",
+        "description": "Data binding of button group.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height"
+    ],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

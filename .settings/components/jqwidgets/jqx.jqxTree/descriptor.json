@@ -1,0 +1,102 @@
+{
+    "type": "component",
+    "name": "jqx.jqxTree",
+    "parent": "jqx.rootComponent",
+    "displayName": "Tree",
+    "icons": {
+        "16": "jqxtree_16.png",
+        "36": "jqxtree_36.png",
+        "68": "jqxtree_68.png"
+    },
+    "categories": ["Tree"],
+    "description": "The jqxTree represents a jQuery Tree widget that displays a hierarchical collection of items.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Gets whether the tree is disabled."
+    }, {
+        "name": "checkboxes",
+        "type": "boolean",
+        "displayName": "Checkboxes",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the tree should display a checkbox next to each item."
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":[{\"label\":\"Directory1\",\"items\":[{\"label\":\"Directory2\",\"checked\":true,\"items\":[{\"label\":\"File1\",\"checked\":true},{\"label\":\"File2\",\"checked\":true}]}]},{\"label\":\"File3\"},{\"label\":\"File4\"},{\"label\":\"File5\"},{\"label\":\"Directory3\",\"items\":[]}],\"raw\":\"Directory1\\n [o]Directory2\\n  [o]File1\\n  [o]File2\\nFile3\\nFile4\\nFile5\\n!Directory3\"}",
+        "category": "Content attributes",
+        "description": "Data binding of tree.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "source",
+        "type": "object",
+        "displayName": "Source",
+        "defaultValue": null,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "",
+        "visible": false,
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "220px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%"]
+        }]
+    }, {
+        "name": "hasThreeStates",
+        "type": "boolean",
+        "displayName": "Has 3 States",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the tree checkboxes have three states - checked, unchecked and indeterminate."
+    }],
+    "unsupportStyle": ["width", "height", "font-family", "font-size", "font-style", "text-decoration", "text-align"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

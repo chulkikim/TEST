@@ -1,0 +1,69 @@
+{
+    "type": "component",
+    "name": "jqx.jqxCheckBox",
+    "parent": "jqx.rootComponent",
+    "displayName": "Check Box",
+    "icons": {
+        "16": "jqxcheckbox_16.png",
+        "36": "jqxcheckbox_36.png",
+        "68": "jqxcheckbox_68.png"
+    },
+    "categories": ["Content"],
+    "description": "The jqxCheckBox displays a check box that allows the end-user to select a true, false or indeterminate condition.",
+    "directEditProperty": "text",
+    "properties": [{
+        "name": "text",
+        "type": "string",
+        "displayName": "Text",
+        "defaultValue": "Check Box",
+        "category": "Content attributes",
+        "codeGen": "textNode",
+        "description": "Text of check box.",
+        "runnerType": "html"
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets whether the check box is disabled."
+    }, {
+        "name": "checked",
+        "type": "boolean",
+        "displayName": "Checked",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the check state."
+    }, {
+        "name": "groupName",
+        "type": "string",
+        "displayName": "Group Name",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the group name. When this property is set, the check boxes in the same group behave as radio buttons."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "unsupportStyle": [],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

@@ -1,0 +1,69 @@
+{
+    "type": "component",
+    "name": "jqx.jqxButton",
+    "displayName": "Button",
+    "parent": "jqx.rootComponent",
+    "icons": {
+        "16": "jqxbutton_16.png",
+        "36": "jqxbutton_36.png",
+        "68": "jqxbutton_68.png"
+    },
+    "categories": ["Buttons"],
+    "description": "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page.",
+    "directEditProperty": "value",
+    "properties": [{
+        "name": "value",
+        "type": "string",
+        "displayName": "Value",
+        "defaultValue": "Button",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "Value of button.",
+        "runnerType": "html"
+    }, {
+        "name": "type",
+        "type": "string",
+        "displayName": "Type",
+        "defaultValue": "button",
+        "category": "Content attributes",
+        "codeGen": "HTMLAttr",
+        "forcedWrite": true,
+        "description": "button type",
+        "visible": false
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables the button."
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }],
+    "events": [{
+        "name": "click",
+        "displayName": "Click",
+        "description": "This event is triggered when the button is clicked."
+    }],
+    "unsupportStyle": [],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "input"
+}

@@ -1,0 +1,289 @@
+{
+    "type": "component",
+    "name": "jqx.jqxTabs",
+    "parent": "jqx.rootComponent",
+    "displayName": "Tabs",
+    "icons": {
+        "16": "jqxtabs_16.png",
+        "36": "jqxtabs_36.png",
+        "68": "jqxtabs_68.png"
+    },
+    "categories": ["Container"],
+    "description": "The jqxTabs represents a jQuery Tabs widget.",
+    "directEditProperty": "dataBinding",
+    "properties": [{
+        "name": "width",
+        "type": "size",
+        "displayName": "Width",
+        "defaultValue": "300px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets widget\"s width.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "height",
+        "type": "size",
+        "displayName": "Height",
+        "defaultValue": "150px",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets widget\"s height.",
+        "conditions": [{
+            "name": "set-size-type",
+            "values": ["px", "%", "in", "cm", "mm", "pt", "pc", "em", "ex"]
+        }]
+    }, {
+        "name": "disabled",
+        "type": "boolean",
+        "displayName": "Disabled",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the tabs widget."
+
+    }, {
+        "name": "selectedItem",
+        "type": "dynamic-enum",
+        "displayName": "Selected Item",
+        "defaultValue": 0,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets selected tab.",
+        "conditions": [{
+            "name": "set-dynamic-enum-type",
+            "values": ["labels",
+                "selectedItemLabel"
+            ]
+        }]
+    }, {
+        "name": "dataBinding",
+        "type": "data-binding",
+        "displayName": "Data Binding",
+        "defaultValue": "{\"data\":{\"labels\":[\"Tab 1\",\"Tab 2\",\"Tab,3\"],\"selectedItemLabel\":\"Tab 2\"},\"raw\":\"Tab 1,@Tab 2,Tab\\\\,3\"}",
+        "category": "Content attributes",
+        "description": "Data binding of tabs.",
+        "runnerType": "data-binding"
+    }, {
+        "name": "uip-visible",
+        "type": "visibility",
+        "displayName": "Show",
+        "defaultValue": "visible",
+        "category": "Content attributes",
+        "description": "Sets whether the widget is visible.",
+        "runnerType": "html"
+    }, {
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false,
+        "runnerType": "html"
+    }, {
+        "name": "uip-skip-child-rendering",
+        "type": "boolean",
+        "displayName": "Skip Child Rendering",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether skip rendering child of the widget",
+        "visible": false
+    }, {
+        "name": "rtl",
+        "type": "boolean",
+        "displayName": "Rtl",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets a value indicating whether widget's elements are aligned to support locales using right-to-left fonts.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "theme",
+        "type": "string",
+        "displayName": "Theme",
+        "defaultValue": "",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets the widget's theme.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "scrollAnimationDuration",
+        "type": "integer",
+        "displayName": "Scroll Animation Duration",
+        "defaultValue": 250,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the duration of the scroll animation.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enabledHover",
+        "type": "boolean",
+        "displayName": "Enabled Hover",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the tabs hover effect.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "collapsible",
+        "type": "boolean",
+        "displayName": "Callapsable",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the collapsible feature.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "animationType",
+        "type": "string",
+        "displayName": "Animation Type",
+        "defaultValue": "none",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the animation type of switching tabs(none or fade).",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "enableScrollAnimation",
+        "type": "boolean",
+        "displayName": "Enable Scroll Animation",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the scroll animation is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "contentTransitionDuration",
+        "type": "integer",
+        "displayName": "Content Transition Duration",
+        "defaultValue": 450,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the duration of the content's fade animation which occurs when the user selects a tab.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "toggleMode",
+        "type": "string",
+        "displayName": "Toggle Mode",
+        "defaultValue": "click",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets user interaction used for switching the different tabs.(click, dbclick, mouseenter, none)",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "position",
+        "type": "string",
+        "displayName": "Position",
+        "defaultValue": "top",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the tabs are positioned at 'top' or 'bottom'.(top, bottom)",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "selectionTracker",
+        "type": "boolean",
+        "displayName": "Selection Tracker",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the selection tracker is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "scrollable",
+        "type": "boolean",
+        "displayName": "Scrollable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the scrolling is enabled.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "scrollPosition",
+        "type": "string",
+        "displayName": "Scroll Position",
+        "defaultValue": "right",
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the position of the scroll arrows.(left, right, both)",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "scrollStep",
+        "type": "integer",
+        "displayName": "Scroll Step",
+        "defaultValue": 70,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the scrolling step.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "autoHeight",
+        "type": "boolean",
+        "displayName": "Auto Height",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether the jqxTabs header's height will be equal to the item with max height.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "showCloseButtons",
+        "type": "boolean",
+        "displayName": "Show Close Buttons",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets whether a close button is displayed in each tab.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "closeButtonSize",
+        "type": "integer",
+        "displayName": "Close Button Size",
+        "defaultValue": 16,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Sets or gets the close button size.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "keyboardNavigation",
+        "type": "boolean",
+        "displayName": "Keyboard Navigation",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the keyboard navigation.",
+        "mode": "general",
+        "runnerType": "html"
+    }, {
+        "name": "reorder",
+        "type": "boolean",
+        "displayName": "Reorder",
+        "defaultValue": false,
+        "category": "Content attributes",
+        "codeGen": "JQXConstrArg",
+        "description": "Enables or disables the reorder feature. When this feature is enabled, the end-user can drag a tab and drop it over another tab. As a result the tabs will be reordered",
+        "mode": "general",
+        "runnerType": "html"
+    }],
+    "unsupportStyle": ["width", "height", "font-weight", "text-align", "text-decoration", "background-image", "background-repeat", "background-color"],
+    "importJs": [],
+    "importCss": [],
+    "outputElement": "div"
+}

@@ -1,0 +1,25 @@
+{
+    "type": "component",
+    "name": "uip.snippet",
+    "displayName": "Snippet",
+    "icons": {
+        "16": "snippet_16.png",
+        "36": "snippet_36.png",
+        "68": "snippet_68.png"
+    },
+    "categories": ["Snippet"],
+    "description": "",
+    "paletteVisible": false,
+    "properties": [{
+        "name": "uip-selectable",
+        "type": "boolean",
+        "displayName": "Selectable",
+        "defaultValue": true,
+        "category": "Content attributes",
+        "description": "Sets whether the widget is selectable.",
+        "visible": false
+    }],
+    "events": [],
+    "supportStyle": ["position", "left", "top", "background-color"],
+    "outputElement": "div"
+}

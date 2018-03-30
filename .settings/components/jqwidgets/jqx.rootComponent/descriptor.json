@@ -1,0 +1,23 @@
+{
+    "type": "component",
+    "name": "jqx.rootComponent",
+    "displayName": "Jqwidget Root Component",
+    "icons": {
+        "16": "jqx_root_16.png",
+        "36": "jqx_root_36.png",
+        "68": "jqx_root_68.png"
+    },
+    "isAbstract": true,
+    "paletteVisible": false,
+    "categories": [],
+    "description": "Jqwidget Root Component",
+    "paletteVisible": false,
+    "properties": [],
+    "events": [],
+    "supportStyle": [],
+    "importJs": ["lib/jquery/jquery-1.11.0.min.js",
+        "lib/jqwidgets/aui-core-1.4.0.min.js",
+        "lib/jqwidgets/aui-widgets-1.7.0.min.js"
+    ],
+    "importCss": ["lib/jqwidgets/aui-widgets.opus.css"]
+}
